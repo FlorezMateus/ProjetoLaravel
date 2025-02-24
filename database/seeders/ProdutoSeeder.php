@@ -13,7 +13,7 @@ class ProdutoSeeder extends Seeder
      */
     public function run(): void
     {
-        DB::table('produtos')->update([
+        DB::table('produtos')->insert([
             'nome' => 'Chuteira',
             'quantidade' => 10,
             'valor' => 500.10,
